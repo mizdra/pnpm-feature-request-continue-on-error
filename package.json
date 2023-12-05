@@ -26,6 +26,7 @@
     "test": "vitest"
   },
   "prettier": "@mizdra/prettier-config-mizdra",
+  "packageManager": "pnpm@8.11.0",
   "devDependencies": {
     "@mizdra/eslint-config-mizdra": "^2.0.0",
     "@mizdra/prettier-config-mizdra": "^1.0.0",
