@@ -1,6 +1,10 @@
 import { setTimeout } from 'node:timers/promises';
 import { add } from './math.js';
 
+const a: string = 1;
+// eslint-disable-next-line no-console
+console.log(a);
+
 export async function run() {
   // NOTE: ここでちょっと待機しておかないと、vscode のデバッグ機能で実行したときに、
   // 後続の行に仕掛けた breakpoint で止まってくれない。おそらく source map の読み込みが
