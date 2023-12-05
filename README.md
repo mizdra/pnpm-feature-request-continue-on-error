@@ -40,7 +40,7 @@ ERROR: "lint:tsc" exited with 1.
 ```console
 $ pnpm run --sequential "/lint:[^:]+/"
 
-> app_name@0.0.0 lint:tsc /Users/mizdra/src/github.com/mizdra/pnpm-feature-request-continue-on-run
+> app_name@0.0.0 lint:tsc /Users/mizdra/src/github.com/mizdra/pnpm-feature-request-continue-on-error
 > tsc
 
 src/runner.ts:4:7 - error TS2322: Type 'number' is not assignable to type 'string'.
@@ -53,7 +53,7 @@ Found 1 error in src/runner.ts:4
 
  ELIFECYCLE  Command failed with exit code 1.
 
-> app_name@0.0.0 lint:eslint /Users/mizdra/src/github.com/mizdra/pnpm-feature-request-continue-on-run
+> app_name@0.0.0 lint:eslint /Users/mizdra/src/github.com/mizdra/pnpm-feature-request-continue-on-error
 > eslint --cache --cache-location node_modules/.cache/eslint/ --cache-strategy content .
 ```
 
@@ -63,7 +63,7 @@ Found 1 error in src/runner.ts:4
 $ pnpm run "/lint:[^:]+/"
 . lint:tsc$ tsc
 │ src/runner.ts(4,7): error TS2322: Type 'number' is not assignable to type 'string'.
-└─ Failed in 453ms at /Users/mizdra/src/github.com/mizdra/pnpm-feature-request-continue-on-run
+└─ Failed in 453ms at /Users/mizdra/src/github.com/mizdra/pnpm-feature-request-continue-on-error
 . lint:eslint$ eslint --cache --cache-location node_modules/.cache/eslint/ --cache-strategy content .
 └─ Running...
 . lint:prettier$ prettier --cache --check .
