@@ -1,4 +1,4 @@
-# pnpm-feature-request-continue-on-run
+# pnpm-feature-request-continue-on-error
 
 ## Setup
 
@@ -6,10 +6,10 @@
 $ pnpm i
 ```
 
-## `pnpm exec run-s -c "lint:*"`
+## `pnpm exec run-s --continue-on-error "lint:*"`
 
 ```console
-$ pnpm exec run-s -c "lint:*"
+$ pnpm exec run-s --continue-on-error "lint:*"
 
 > app_name@0.0.0 lint:tsc
 > tsc
