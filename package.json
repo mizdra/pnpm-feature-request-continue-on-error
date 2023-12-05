@@ -19,7 +19,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "dev": "npm run build && node bin/example-command.js",
-    "lint": "run-s -c lint:*",
+    "lint-by-pnpm-run": "pnpm run --sequential '/lint:[^:]+/'",
+    "lint-by-npm-run-all": "run-s -c lint:*",
     "lint:tsc": "tsc",
     "lint:eslint": "eslint --cache --cache-location node_modules/.cache/eslint/ --cache-strategy content .",
     "lint:prettier": "prettier --cache --check .",
